@@ -1,0 +1,16 @@
+[
+{
+  "modid": "emod",
+  "name": "EMod",
+  "description": "Our first mod.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["TopRoman", "SpiritVL"],
+  "credits": "Nobody",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
