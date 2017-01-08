@@ -16,12 +16,20 @@ public class EMod {
     public static final String VERSION = "0.1";
 
     public static Block eblock;
+    public static Block soft;
+    public static Block lattice;
     public static Item epickaxe;
 
     @EventHandler
     public void preLoad(FMLPreInitializationEvent event) {
         eblock = new EBlock();
         GameRegistry.registerBlock(eblock, EBlock.NAME);
+
+        soft = new Soft();
+        GameRegistry.registerBlock(soft, Soft.NAME);
+
+        lattice = new Lattice();
+        GameRegistry.registerBlock(lattice, Lattice.NAME);
 
         epickaxe = new EPickaxe();
         GameRegistry.registerItem(epickaxe, EPickaxe.NAME);

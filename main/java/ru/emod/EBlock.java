@@ -9,7 +9,6 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.IIcon;
 import net.minecraft.util.MathHelper;
 import net.minecraft.world.World;
-import scala.Console;
 
 public class EBlock extends Block {
 
@@ -24,13 +23,12 @@ public class EBlock extends Block {
         this.setHardness(15F);
         this.setResistance(10F);
         this.setHarvestLevel("pickaxe", 1);
-        this.setBlockTextureName(EMod.MODID + ":" + NAME);
     }
 
     @Override
     public void registerBlockIcons(IIconRegister reg) {
         for (int i = 0; i < SIZE; i++) {
-            this.icons[i] = reg.registerIcon(this.textureName + i);
+            this.icons[i] = reg.registerIcon(EMod.MODID + ":" + NAME + i);
         }
     }
 
